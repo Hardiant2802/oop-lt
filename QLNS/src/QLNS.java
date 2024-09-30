@@ -3,10 +3,8 @@ public class QLNS {
     SinhVien sv;
     Person p;
 
-    public QLNS(GiangVien gv, SinhVien sv, Person p) {
-        this.gv = gv;
-        this.sv = sv;
-        this.p = p;
+    public QLNS() {
+
     }
 
     public GiangVien getGv() {
@@ -39,7 +37,7 @@ public class QLNS {
         qlns.setSv(new SinhVien("Nguyen Van B", "23020531", "2005"));
         qlns.setP(new Person("Nguyen Van C", "1998"));
         System.out.println(qlns.getGv().getHoTen() + " " + qlns.getGv().getNamSinh());
-        System.out.println(qlns.getSv().getHoTen() + " " + qlns.getSv().getMaSinhVien() + " " + QLNS.getSv().getNamSinh());
+        System.out.println(qlns.getSv().getHoTen() + " " + qlns.getSv().getMaSinhVien() + " " + qlns.getSv().getNamSinh());
         System.out.println(qlns.getP().getHoTen() + " " + qlns.getP().getNamSinh());
     }
 }
